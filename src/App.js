@@ -6,7 +6,7 @@ import Button from './Button';
 
 import { ThemeProvider } from './ThemeContext'
 
-
+import styles from './App.css';
 
 
 function App(props) {
@@ -39,7 +39,8 @@ function App(props) {
       <Header
       // onToggleTheme={handleToggleTheme}
       >
-        <h2>Posts da Semana
+        <h2 className={styles.title}>
+          Posts da Semana
 
           <button
             onClick={handleRefresh}
